@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cyber SH</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: #0d0d0d;
+      color: #f0f0f0;
+      line-height: 1.6;
+    }
+    header {
+      background: rgba(0,0,0,0.8);
+      padding: 20px;
+      text-align: center;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+    }
+    header h1 {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 2rem;
+      color: #00ffcc;
+      letter-spacing: 2px;
+    }
+    nav a {
+      color: #f0f0f0;
+      text-decoration: none;
+      margin: 0 15px;
+      transition: color 0.3s;
+    }
+    nav a:hover { color: #00ffcc; }
+    section {
+      padding: 100px 20px;
+      min-height: 100vh;
+    }
+    .hero {
+      background: linear-gradient(135deg, #0d0d0d, #1a1a1a);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      animation: backgroundShift 10s infinite alternate;
+    }
+    @keyframes backgroundShift {
+      0% { background: linear-gradient(135deg, #0d0d0d, #1a1a1a); }
+      100% { background: linear-gradient(135deg, #111, #222); }
+    }
+    .hero h2 {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 3rem;
+      color: #00ffcc;
+      margin-bottom: 20px;
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 25px;
+      background: #00ffcc;
+      color: #0d0d0d;
+      font-weight: bold;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+    .btn:hover { background: #00cc99; }
+    footer {
+      background: #111;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      border-top: 1px solid #333;
+    }
+    html { scroll-behavior: smooth; }
+    h2 {
+      font-family: 'Orbitron', sans-serif;
+      color: #00ffcc;
+      margin-bottom: 15px;
+    }
+    form input, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      background: #1a1a1a;
+      border: 1px solid #333;
+      color: #f0f0f0;
+    }
+    form button {
+      padding: 12px 25px;
+      background: #00ffcc;
+      border: none;
+      color: #0d0d0d;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    form button:hover { background: #00cc99; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Cyber SH</h1>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#ceo">CEO</a>
+    <a href="#team">Team</a>
+    <a href="#training">AI Training</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero" id="home">
+  <h2>Secure AI, Open Source</h2>
+  <p>Cyber SH is an open-source AI security ecosystem founded at the end of 2026. Our mission: build AI that is fast, private, and for everyone.</p>
+  <a href="#about" class="btn">Learn More</a>
+</section>
+
+<section id="about">
+  <h2>About Cyber SH</h2>
+  <p>Cyber SH was started in late 2026 with the vision of creating AI that belongs to no corporation, no gatekeeper — only to the community. We focus on privacy, resilience, and hacker-driven innovation.</p>
+</section>
+
+<section id="ceo">
+  <h2>About the CEO</h2>
+  <p>Neo4, founder and CEO of Cyber SH, is a professional hacker and pro-Linux user. The project was born from a desire to build AI that respects independence and transparency. With years of experience in cybersecurity and open-source development, Neo4 leads Cyber SH with discipline and vision.</p>
+</section>
+
+<section id="team">
+  <h2>Our Team</h2>
+  <p>Cyber SH is built by a diverse team of contributors worldwide. From the earliest days, our team has focused on creating tools that empower developers and researchers. Collaboration and open-source culture drive our progress.</p>
+</section>
+
+<section id="training">
+  <h2>How We Train AI</h2>
+  <p>We take core engines from major companies and retrain them with our own datasets, vision, and security-focused adjustments. This ensures Cyber SH AI is aligned with our mission: fast, private, and community-driven.</p>
+</section>
+
+<section id="contact">
+  <h2>Contact Us</h2>
+  <form action="mailto:neo4linux404@proton.me" method="post" enctype="text/plain">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" placeholder="Your Message" required></textarea>
+    <button type="submit">Send</button>
+  </form>
+</section>
+
+<footer>
+  All rights reserved © Cyber SH 2026
+</footer>
+
+</body>
+</html>
