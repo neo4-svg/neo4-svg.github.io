@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://neo4-svg.github.io/sitemap.xml
